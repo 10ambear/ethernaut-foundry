@@ -9,7 +9,6 @@ import "./utils/vm.sol";
 contract TokenTest is DSTest{
     Vm vm = Vm(address(0x7109709ECfa91a80626fF3989D68f67F5b1DD12D));
     Ethernaut ethernaut;
-    address playerAddress = 0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266; // this address doesn't mean anything, this is just a placeholder for my own wallet address i.e. a metamask address
     address eoaAddress = address(100);
 
     function setUp() public {
