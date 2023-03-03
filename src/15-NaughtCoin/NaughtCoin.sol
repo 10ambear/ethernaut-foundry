@@ -19,10 +19,10 @@ contract NaughtCoin is ERC20 {
         _mint(player, INITIAL_SUPPLY);
         emit Transfer(address(0), player, INITIAL_SUPPLY);
     }
+
     // @audit the thing to look out for here is you don't have to use transfer,
     // you can use transferfrom. Which means that the locktokens modifier would
     // not be applicable
-
     function transfer(address _to, uint256 _value) public override lockTokens returns (bool) {
         super.transfer(_to, _value);
     }
