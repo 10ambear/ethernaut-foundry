@@ -2,6 +2,9 @@
 
 pragma solidity ^0.8.10;
 
+// This is honestly quite a difficult hack
+// this is a good explanation of what is happening here
+// https://www.youtube.com/watch?v=uw4u_1P4ung
 interface IPreservation {
     function setFirstTime(uint256) external;
 }
